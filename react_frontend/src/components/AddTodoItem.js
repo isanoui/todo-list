@@ -40,6 +40,7 @@ const AddTodoItem = ({ input, setInput, editInput, setEditInput, data, setData }
 		// No white space only inputs
 		if (input.trim() !== '') {
 
+			// Handle submision if EDIT
 			if (editInput[0]) {
 				// edit todo item locally, user not logged in
 				if (localStorage.getItem("userId") == -1) {
@@ -57,6 +58,7 @@ const AddTodoItem = ({ input, setInput, editInput, setEditInput, data, setData }
 						setData(res.data.todos)
 					})
 				}
+			// Handle submission if CREATE
 			} else {
 				// store todo item locally, user not logged in
 				if (localStorage.getItem("userId") == -1) {
