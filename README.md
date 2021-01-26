@@ -9,7 +9,7 @@ A full CRUD application used to keep track of todo items, built with ReactJS and
 
 ## Features
 
-- Login/Register users
+- Login/Register users (email not required)
 - Add todo item
 - Edit todo item
 - Delete todo item
