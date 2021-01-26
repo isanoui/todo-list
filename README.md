@@ -8,7 +8,7 @@ A full CRUD application used to keep track of todo items, built with ReactJS and
 
 ### Project URL: 
 
-`https://festive-chandrasekhar-e40420.netlify.app/`
+[CLICK HERE TO VIEW PROJECT](https://festive-chandrasekhar-e40420.netlify.app/)
 
 ## Features
 
