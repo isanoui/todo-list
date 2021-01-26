@@ -1,14 +1,11 @@
-## Project Name & Pitch
-
-### Todo List 
+## Todo List 
 
 A full CRUD application used to keep track of todo items, built with ReactJS and Java Spring Boot using a MySQL server. 
 
-## How to use 
 
-### Project URL: 
+### Project: 
 
-[CLICK HERE TO VIEW PROJECT](https://festive-chandrasekhar-e40420.netlify.app/)
+[Click here to view project](https://festive-chandrasekhar-e40420.netlify.app/)
 
 ## Features
 
