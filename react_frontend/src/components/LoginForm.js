@@ -11,6 +11,8 @@ const LoginForm = ({ setUserId }) => {
     const [usernameInput, setUsernameInput] = useState('')
     const [passwordInput, setPasswordInput] = useState('')
 
+    const [incorrectPass, setIncorrectPass] = useState(false)
+
     const usernameTextHandler = e => {
         setUsernameInput(e.target.value)
     }
@@ -20,8 +22,8 @@ const LoginForm = ({ setUserId }) => {
     }
 
     // Login/Register User
-    const submitUserHandler = e => {
-        e.preventDefault()
+    const submitUserHandler = () => {
+
         if (usernameInput.trim() !== '' && passwordInput.trim() !== '') {
             const user = {
                 name: usernameInput.trim(),
@@ -30,16 +32,21 @@ const LoginForm = ({ setUserId }) => {
             }
 
             UserService.loginOrSignup(user).then(res => {
-                setUserId(res.data.id)
-                localStorage.setItem('userId', res.data.id)
-                window.location.href = 'https://festive-chandrasekhar-e40420.netlify.app/'
+                if (res.status === 202) {
+                    setUserId(res.data.id)
+                    localStorage.setItem('userId', res.data.id)
+                    setIncorrectPass(false)
+                    window.location.href = 'https://festive-chandrasekhar-e40420.netlify.app/'
+                }
+            }).catch(err => {
+                setIncorrectPass(true)
             })
         }
     }
 
     return (
         <form className="login-form" onSubmit={submitUserHandler}>
-            <p style={{ color: "red" }}>* If username doesn't exist, it will create a new user.</p>
+            {incorrectPass ? <p style={{ color: "red" }}><strong>Password is incorrect</strong></p> : <p style={{ color: "red" }}>* If username doesn't exist, it will create a new user.</p>}
             <TextField
                 label="Username"
                 type="text"
