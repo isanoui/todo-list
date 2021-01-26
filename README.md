@@ -1,6 +1,6 @@
 ## Todo List 
 
-A full CRUD application used to keep track of todo items, built with ReactJS and Java Spring Boot using a MySQL server. 
+A fullstack CRUD application used to keep track of todo items, built with ReactJS and Java Spring Boot using a MySQL server. 
 
 
 ### Project: 
