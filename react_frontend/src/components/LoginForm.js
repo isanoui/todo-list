@@ -39,6 +39,7 @@ const LoginForm = ({ setUserId }) => {
                     window.location.href = 'https://festive-chandrasekhar-e40420.netlify.app/'
                 }
             }).catch(err => {
+                // Show 'incorrect password' text
                 setIncorrectPass(true)
             })
         }
