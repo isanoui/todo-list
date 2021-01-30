@@ -7,7 +7,7 @@ A fullstack CRUD application used to keep track of todo items, built with ReactJ
 
 [Click here to view project](https://festive-chandrasekhar-e40420.netlify.app/)
 
-Note: Please give up to 60 seconds when logging in due to the SQL server being hosted on `Heroku's ClearDB` which takes a few seconds to load up if the site isn't used for awhile as I'm hosting using the free settings
+Note: Please give up to 30 seconds when logging in due to the SQL server being hosted on `Heroku's ClearDB` which takes a few seconds to load up if the site isn't used for awhile as I'm hosting using the free settings
 
 ## Features
 
