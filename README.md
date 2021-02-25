@@ -5,7 +5,7 @@ A fullstack CRUD application used to keep track of todo items, built with ReactJ
 
 ### Project: 
 
-[Click here to view project](https://festive-chandrasekhar-e40420.netlify.app/)
+[Click here to view project](https://todolist-13.netlify.app/)
 
 #### Note: Please give up to 60 seconds when logging in as heroku sleeps the server after 30 minutes of inactivity due to using a free acount
 
